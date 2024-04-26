@@ -1,5 +1,6 @@
 import './footer.scss';
 import React from 'react'
+import FooterAnonymous from './footer_anonymous';
 
 export interface IFooterProps {
     isAdmin: boolean
@@ -10,7 +11,7 @@ function Footer(props: IFooterProps) {
             {
                 props.isAdmin ?
                     <div> Footer Admin</div> :
-                    <div> Footer default</div>
+                    <FooterAnonymous />
 
             }
         </div>

@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/shared/layout/header/header";
 import Footer from "@/shared/layout/footer/footer";
 import { useEffect, useState } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

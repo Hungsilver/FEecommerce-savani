@@ -81,7 +81,8 @@ export interface ICategoryHome {
     name: string;
     thumbnail: string;
     description: string;
-    subCategoriesHome: ISubCategory[];
+    subCategories: ISubCategory[];
+    products: IProduct[],
     status: number;
     createdDate: string;
     lastModifiedDate: string;
@@ -647,7 +648,94 @@ export const dataCategoriesHome: ICategoryHome[] = [
         "name": "nam",
         "thumbnail": "https://savani.vn/images/menus/thoi-trang-nam-savani_1706273946.jpg",
         "description": "dd",
-        "subCategoriesHome": [
+        "products": [
+            {
+                "id": 3,
+                "code": "MS003",
+                "name": "Áo polo nam",
+                "subCategory": {
+                    "id": 1,
+                    "name": "Áo polo",
+                    "image": "''",
+                    "description": "none",
+                    "createdDate": "2024-03-05T16:37:47.040007Z",
+                    "lastModifiedDate": "2024-03-05T16:37:47.040007Z",
+                    "status": 1
+                },
+                "promotion": null,
+                "description": "không",
+                "image": "https://savani.vn/images/image/2024/04/01/large/MPS002S4-3-E02-polo-nam-3.jpg",
+                "productDetails": [],
+                "createdDate": "2024-03-05T16:37:47.040007Z",
+                "lastModifiedDate": "2024-03-05T16:37:47.040007Z",
+                "status": 1
+            },
+            {
+                "id": 1,
+                "code": "MS001",
+                "name": "Áo T-shirt nam",
+                "subCategory": {
+                    "id": 5,
+                    "name": "Áo T-Shirt",
+                    "image": "''",
+                    "description": "none",
+                    "createdDate": "2024-03-05T16:37:47.040007Z",
+                    "lastModifiedDate": "2024-03-05T16:37:47.040007Z",
+                    "status": 1
+                },
+                "promotion": {
+                    "id": 1,
+                    "code": "MAGD093",
+                    "name": "Tet",
+                    "type": true,
+                    "value": 50000,
+                    "startDate": null,
+                    "endDate": null,
+                    "minSpend": 400000,
+                    "maxSpend": 500000,
+                    "quantityUsed": 2,
+                    "status": 1,
+                    "createdDate": null,
+                    "lastModifiedDate": null
+                },
+                "description": "không",
+                "image": "https://savani.vn/images/image/2024/04/01/large/MPS002S4-3-E02-polo-nam-3.jpg",
+                "productDetails": [
+                    {
+                        "createdBy": "AA",
+                        "createdDate": "2024-03-05T16:37:47.040007Z",
+                        "lastModifiedBy": "AA",
+                        "lastModifiedDate": "2024-03-05T16:37:47.040007Z",
+                        "id": 1,
+                        "sku": "SP001",
+                        "name": "Áo T-shirt nam MS001",
+                        "image": "''",
+                        "price": 123000,
+                        "sold": 12,
+                        "featured": true,
+                        "status": 1
+                    },
+                    {
+                        "createdBy": "AA",
+                        "createdDate": "2024-03-05T16:37:47.040007Z",
+                        "lastModifiedBy": "AA",
+                        "lastModifiedDate": "2024-03-05T16:37:47.040007Z",
+                        "id": 2,
+                        "sku": "SP002",
+                        "name": "Áo polo nữ MS004",
+                        "image": "''",
+                        "price": 123000,
+                        "sold": 12,
+                        "featured": true,
+                        "status": 1
+                    }
+                ],
+                "createdDate": "2024-03-05T16:37:47.040007Z",
+                "lastModifiedDate": "2024-03-05T16:37:47.040007Z",
+                "status": 1
+            }
+        ],
+        "subCategories": [
             {
                 "id": 21,
                 "name": "Quần âu",
@@ -685,7 +773,7 @@ export const dataCategoriesHome: ICategoryHome[] = [
         "name": "nữ",
         "thumbnail": "https://savani.vn/images/menus/thoi-trang-nu-savani_1706273969.jpg",
         "description": "dd",
-        "subCategoriesHome": [
+        "subCategories": [
             {
                 "id": 2,
                 "name": "Áo polo",
@@ -732,6 +820,50 @@ export const dataCategoriesHome: ICategoryHome[] = [
                 "status": 1
             }
         ],
+        "products": [
+            {
+                "id": 4,
+                "code": "MS004",
+                "name": "Áo polo nữ",
+                "subCategory": {
+                    "id": 2,
+                    "name": "Áo polo",
+                    "image": "''",
+                    "description": "none",
+                    "createdDate": "2024-03-05T16:37:47.040007Z",
+                    "lastModifiedDate": "2024-03-05T16:37:47.040007Z",
+                    "status": 1
+                },
+                "promotion": null,
+                "description": "không",
+                "image": "https://savani.vn/images/image/2024/04/01/large/MPS002S4-3-E02-polo-nam-3.jpg",
+                "productDetails": [],
+                "createdDate": "2024-03-05T16:37:47.040007Z",
+                "lastModifiedDate": "2024-03-05T16:37:47.040007Z",
+                "status": 1
+            },
+            {
+                "id": 5,
+                "code": "MS099",
+                "name": "Áo len nữ",
+                "subCategory": {
+                    "id": 2,
+                    "name": "Áo polo",
+                    "image": "''",
+                    "description": "none",
+                    "createdDate": "2024-03-05T16:37:47.040007Z",
+                    "lastModifiedDate": "2024-03-05T16:37:47.040007Z",
+                    "status": 1
+                },
+                "promotion": null,
+                "description": "không",
+                "image": "https://savani.vn/images/image/2024/04/01/large/MPS002S4-3-E02-polo-nam-3.jpg",
+                "productDetails": [],
+                "createdDate": "2024-03-05T16:37:47.040007Z",
+                "lastModifiedDate": "2024-03-05T16:37:47.040007Z",
+                "status": 1
+            }
+        ],
         "status": 1,
         "createdDate": "2024-03-05T16:37:47.040007Z",
         "lastModifiedDate": "2024-03-05T16:37:47.040007Z"
@@ -741,7 +873,7 @@ export const dataCategoriesHome: ICategoryHome[] = [
         "name": "trẻ em",
         "thumbnail": "https://savani.vn/images/menus/thoi-trang-tre-em_1706274031.jpg",
         "description": "dd",
-        "subCategoriesHome": [
+        "subCategories": [
             {
                 "id": 36,
                 "name": "Bộ xuân hè",
@@ -770,6 +902,7 @@ export const dataCategoriesHome: ICategoryHome[] = [
                 "status": 1
             }
         ],
+        "products": [],
         "status": 1,
         "createdDate": "2024-03-05T16:37:47.040007Z",
         "lastModifiedDate": "2024-03-05T16:37:47.040007Z"
@@ -779,7 +912,7 @@ export const dataCategoriesHome: ICategoryHome[] = [
         "name": "đồng phục",
         "thumbnail": "https://savani.vn/images/menus/thoi-trang-gia-dinh-savani_1706274051.jpg",
         "description": "dd",
-        "subCategoriesHome": [
+        "subCategories": [
             {
                 "id": 6,
                 "name": "Áo T-Shirt",
@@ -794,6 +927,50 @@ export const dataCategoriesHome: ICategoryHome[] = [
                 "name": "Áo polo",
                 "image": "https://savani.vn/images/products/cat/2023/07/resized/dp-09_1690536301.webp",
                 "description": "none",
+                "createdDate": "2024-03-05T16:37:47.040007Z",
+                "lastModifiedDate": "2024-03-05T16:37:47.040007Z",
+                "status": 1
+            }
+        ],
+        "products": [
+            {
+                "id": 2,
+                "code": "MS002",
+                "name": "Áo T-shirt nữ",
+                "subCategory": {
+                    "id": 6,
+                    "name": "Áo T-Shirt",
+                    "image": "''",
+                    "description": "none",
+                    "createdDate": "2024-03-05T16:37:47.040007Z",
+                    "lastModifiedDate": "2024-03-05T16:37:47.040007Z",
+                    "status": 1
+                },
+                "promotion": null,
+                "description": "không",
+                "image": "https://savani.vn/images/image/2024/04/01/large/MPS002S4-3-E02-polo-nam-3.jpg",
+                "productDetails": [],
+                "createdDate": "2024-03-05T16:37:47.040007Z",
+                "lastModifiedDate": "2024-03-05T16:37:47.040007Z",
+                "status": 1
+            },
+            {
+                "id": 3,
+                "code": "MS0090",
+                "name": "Áo T-shirt nữ",
+                "subCategory": {
+                    "id": 6,
+                    "name": "Áo T-Shirt",
+                    "image": "''",
+                    "description": "none",
+                    "createdDate": "2024-03-05T16:37:47.040007Z",
+                    "lastModifiedDate": "2024-03-05T16:37:47.040007Z",
+                    "status": 1
+                },
+                "promotion": null,
+                "description": "không",
+                "image": "https://savani.vn/images/image/2024/04/01/large/MPS002S4-3-E02-polo-nam-3.jpg",
+                "productDetails": [],
                 "createdDate": "2024-03-05T16:37:47.040007Z",
                 "lastModifiedDate": "2024-03-05T16:37:47.040007Z",
                 "status": 1
@@ -822,7 +999,7 @@ export const dataProductsByCategoryId1: IResponseData = {
             },
             "promotion": null,
             "description": "không",
-            "image": null,
+            "image": "https://savani.vn/images/image/2024/04/01/large/MPS002S4-3-E02-polo-nam-3.jpg",
             "productDetails": [],
             "createdDate": "2024-03-05T16:37:47.040007Z",
             "lastModifiedDate": "2024-03-05T16:37:47.040007Z",
@@ -855,3 +1032,30 @@ export const dataProductsByCategoryId1: IResponseData = {
     "numberOfElements": 1,
     "empty": false
 }
+
+export interface IDataNews {
+    id: number,
+    image: string,
+    title: string,
+    createDate: string
+}
+export const dataNews: IDataNews[] = [
+    {
+        "id": 1,
+        "image": "https://savani.vn/images/news/2024/04/home/phoi-so-mi-tay-ngan-cung-quan-au-thoi-thuong_1712973652.png",
+        "title": "Tips phối đồ quần tây áo sơ mi nam thời thượng - nâng tầm phong cách | Savani.vn",
+        "createDate": "13/04/2024",
+    },
+    {
+        "id": 2,
+        "image": "https://savani.vn/images/news/2024/04/home/chinh-thuc-ra-mat_1712800591.png",
+        "title": "Chính Thức Ra Mắt Polo Công Nghệ Mới 2024 - Giá Trải Nghiệm Chỉ 229K",
+        "createDate": "13/04/2024",
+    },
+    {
+        "id": 3,
+        "image": "https://savani.vn/images/news/2024/04/home/10-shop-ban-ao-thun-co-co-uy-tin-chinh-hang-min_1712558499.png",
+        "title": "10+ shop bán áo thun nam có cổ uy tín - chính hãng 2024",
+        "createDate": "13/04/2024",
+    },
+]

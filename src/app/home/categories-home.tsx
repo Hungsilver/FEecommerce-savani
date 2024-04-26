@@ -27,9 +27,12 @@ function CategoriesHome(props: { images: string[], categories: ICategoryHome[] }
                     <li className={cateChoose === '4' ? 'li-select' : ''} onClick={() => changeCate('4')}>ĐỒNG PHỤC</li>
                 </ul>
                 <div className='flex justify-center py-4'>
-                    {!!dataCateChoose.subCategoriesHome && dataCateChoose.subCategoriesHome.map(item => (
+                    {!!dataCateChoose.subCategories && dataCateChoose.subCategories.map(item => (
                         <div key={item.id} className='w-[150px]'>
                             <img loading='lazy' className='w-100 h-auto' src={item.image} alt="img-category" />
+                            <div>
+                                <p className='text-center'>{item.name}</p>
+                            </div>
                         </div>
                     ))}
 
