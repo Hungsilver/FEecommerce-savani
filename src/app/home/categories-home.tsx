@@ -35,6 +35,7 @@ function CategoriesHome(props: { images: string[], categories: ICategoryHome[] }
                             </div>
                         </div>
                     ))}
+                    
 
                 </div>
             </div>
