@@ -1,7 +1,7 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:8080/api/",
+  baseURL: "https://beecommerce-savani.onrender.com/api/",
   timeout: 10000,
 });
 
