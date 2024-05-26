@@ -17,12 +17,8 @@ function ForgotPage() {
       console.log("not available to execute recaptcha");
       return;
     }
-    console.log(process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY);
-    console.log(process.env.NEXT_PUBLIC_RECAPTCHA_SECRET_KEY);
 
     const gRecaptchaToken = await executeRecaptcha("inquirySubmit");
-
-    ///
 
     const response = await axios({
       method: "post",
@@ -92,7 +88,7 @@ function ForgotPage() {
           </button>
         </form>
 
-        {submit && <p>(submit)</p>}
+        {submit && <p>{submit}</p>}
       </div>
     </div>
   );
