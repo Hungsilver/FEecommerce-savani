@@ -1,4 +1,5 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
+import { NextResponse } from "next/server";
 
 const axiosInstance = axios.create({
   baseURL: "https://beecommerce-savani.onrender.com/api/",

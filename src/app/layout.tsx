@@ -3,12 +3,12 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/shared/layout/header/header";
 import Footer from "@/shared/layout/footer/footer";
-import { useEffect, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 // Prevent fontawesome from adding its CSS since we did it manually above:
 import { config } from "@fortawesome/fontawesome-svg-core";
+import GoogleRecaptchaWrapper from "@/shared/common/GoogleRecaptchaWrapper";
 config.autoAddCss = false; /* eslint-disable import/first */ //fix bug icon awesome bi to first load
 
 const inter = Inter({ subsets: ["latin"] });
@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header isAdmin={isAdmin} isAuthenticated={isAuthenticated} />
-        {children}
+        <GoogleRecaptchaWrapper>{children}</GoogleRecaptchaWrapper>
         <Footer isAdmin={isAdmin} />
       </body>
     </html>

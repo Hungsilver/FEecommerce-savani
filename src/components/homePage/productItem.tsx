@@ -9,7 +9,7 @@ function ProductItem(props: { product: IProduct }) {
   return (
     <div className="flex flex-col gap-3 p-3 border-2 rounded-md border-gray-200 h-full">
       <Link
-        href={`${prettyUrl}?code=${productItem.code}`}
+        href={`/product/${prettyUrl}?code=${productItem.code}`}
         className="w-full relative outline-none"
       >
         <img
@@ -25,7 +25,7 @@ function ProductItem(props: { product: IProduct }) {
       <div>
         <a
           className="font-semibold"
-          href={`${prettyUrl}?code=${productItem.code}`}
+          href={`/product/${prettyUrl}?code=${productItem.code}`}
         >
           {productItem.name}
         </a>
