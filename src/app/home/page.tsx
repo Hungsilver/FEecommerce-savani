@@ -10,6 +10,7 @@ import {
   dataCategoriesHome,
   dataNews,
 } from "@/shared/layout/header/dataFake";
+
 import CategoryHomeComponent from "./categoryHomeComponent";
 import NewsPage from "./news/news";
 import axios from "axios";

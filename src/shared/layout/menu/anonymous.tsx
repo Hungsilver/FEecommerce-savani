@@ -106,7 +106,7 @@ export function AnonymousInfo({ isAuthenticated }: IHeaderProps) {
           <button>
             <FontAwesomeIcon className={styleIcon} icon={faMagnifyingGlass} />
           </button>
-          <a href="/profile">
+          <a href="/account">
             <FontAwesomeIcon className={styleIcon} icon={faUser} />
           </a>
           <a href="/cart">
